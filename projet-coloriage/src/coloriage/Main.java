@@ -1,12 +1,23 @@
 package coloriage;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+
 public class Main {
 
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Jcanvas jc = new Jcanvas();
+		jc.setBackground(Color.WHITE);
+		jc.setPreferredSize(new Dimension(400, 200));
+		Dimension dim = new Dimension(40, 40);
+		IDrawable rect = new RectangleDrawable(Color.RED, new Point(10, 10),dim);
+	
+		jc.addDrawable(rect);
+		GUIHelper.showOnFrame(jc, "Fenetre");
+		
+	
 
 	}
 
