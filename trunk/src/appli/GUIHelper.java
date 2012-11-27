@@ -1,5 +1,6 @@
 package appli;
 
+import java.awt.Graphics;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JComponent;
@@ -19,6 +20,12 @@ public class GUIHelper {
 		frame.getContentPane().add(component);
 		frame.pack();
 		frame.setVisible(true);
+		
+		
+		
+	}
+	public static void update(Graphics g)
+	{
 		
 	}
 }
