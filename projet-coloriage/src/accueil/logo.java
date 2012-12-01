@@ -10,6 +10,8 @@ import javax.swing.JPanel;
  
 public class logo extends JPanel {
 	
+	private static final long serialVersionUID = 1L;
+
 	public void paintComponent(Graphics g){
 		try {
 			g.setColor(new Color(229, 229, 229));
