@@ -2,10 +2,14 @@ package accueil;
 
 
 public class InterfaceAccueil {
+	
+
+	public static Fenetre fenetreBasique;
+
 	public static void main(String[] args){
 		   
-		   Fenetre fenetreBasique = new Fenetre();
-		   fenetreBasique.setVisible(true);
+			fenetreBasique = new Fenetre();
+			fenetreBasique.setVisible(true);
 	      
 	   }  
 }
