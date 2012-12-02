@@ -1,13 +1,12 @@
 package appli_coloriage;
 
 import java.awt.event.ActionEvent;
-
 import javax.swing.AbstractAction;
 
-public class Action_bouton_menu  extends AbstractAction{
+public class ActionBoutonMenu4  extends AbstractAction{
 	private static final long serialVersionUID = 1L;
 
-	public Action_bouton_menu(String texte){
+	public ActionBoutonMenu4(String texte){
 		super(texte);
 	}
 	
@@ -15,6 +14,6 @@ public class Action_bouton_menu  extends AbstractAction{
 		System.out.println("Retour au menu");
 
 		InterfaceAccueil.fenetreBasique.setVisible(true); //la page d'accueil est affichée
-		Action_bouton_1.niveau1.dispose(); //le niveau 1 est supprimé de la mémoire
+		Action_bouton_4.niveau4.dispose(); //le niveau 4 est supprimé de la mémoire
 	}
 }

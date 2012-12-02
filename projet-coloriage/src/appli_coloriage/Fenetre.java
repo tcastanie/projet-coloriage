@@ -2,7 +2,9 @@ package appli_coloriage;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.Toolkit;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -11,8 +13,10 @@ import javax.swing.JPanel;
 public class Fenetre extends JFrame{
 	
 	private static final long serialVersionUID = 1L;
-	
 	logo titre = new logo();
+	
+	ClassLoader myClassLoader = Thread.currentThread().getContextClassLoader();
+	Toolkit tk = Toolkit.getDefaultToolkit();
 	
 	public Fenetre(){
 		super();
@@ -38,14 +42,20 @@ public class Fenetre extends JFrame{
 		JPanel menu = new JPanel();						//création d'un panneau pour les liens
 		menu.setBackground(new Color(229, 229, 229));
 		menu.setLayout(new GridLayout(5,1,2,10));
-		JButton bouton1 = new JButton(new Action_bouton_1("Niveau 1"));
+		
+		JButton bouton1 = new JButton(new Action_bouton_1(""));
+		bouton1.setIcon(new ImageIcon(tk.getImage(myClassLoader.getResource("smiley-maison.gif"))));
 		menu.add(bouton1);
+		
 		JButton bouton2 = new JButton(new Action_bouton_2("Niveau 2"));
 		menu.add(bouton2);
+		
 		JButton bouton3 = new JButton(new Action_bouton_3("Niveau 3"));
 		menu.add(bouton3);
+		
 		JButton bouton4 = new JButton(new Action_bouton_4("Niveau 4"));
 		menu.add(bouton4);
+		
 		JButton bouton5 = new JButton(new Action_bouton_5("Niveau 5"));
 		menu.add(bouton5);
 		
