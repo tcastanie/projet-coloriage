@@ -6,12 +6,12 @@ import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class Niveau_1 extends Fenetre{
+public class Niveau_4 extends Fenetre{
 	
 	private static final long serialVersionUID = 1L;
 	
 
-	public Niveau_1(){
+	public Niveau_4(){
 		super();
 		build();
 	}
@@ -22,13 +22,13 @@ public class Niveau_1 extends Fenetre{
 	
 	private JPanel buildContentPane(){
 		
-		JPanel panelniv1 = new JPanel();
-		panelniv1.setLayout(new BorderLayout());
-		panelniv1.setBackground(new Color(10, 231, 89));
-		JButton retourmenu = new JButton(new ActionBoutonMenu1("Retour au menu"));
-		panelniv1.add(retourmenu, BorderLayout.NORTH);
+		JPanel panelniv4 = new JPanel();
+		panelniv4.setLayout(new BorderLayout());
+		panelniv4.setBackground(new Color(100, 12, 196));
+		JButton retourmenu = new JButton(new ActionBoutonMenu4("Retour au menu"));
+		panelniv4.add(retourmenu, BorderLayout.NORTH);
 		
-		return panelniv1;
+		return panelniv4;
 	}
 	
 }
