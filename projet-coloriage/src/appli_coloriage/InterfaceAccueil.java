@@ -9,7 +9,10 @@ public class InterfaceAccueil {
 	public static void main(String[] args){
 		   
 			fenetreBasique = new Fenetre();
-			fenetreBasique.setVisible(true);
-	      
+			fenetreBasique.setVisible(true);	
+				
+					
+					
+				
 	   }  
 }
