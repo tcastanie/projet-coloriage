@@ -18,7 +18,7 @@ public class Action_bouton_4 extends AbstractAction {
 
 		niveau4 = new Niveau_4();
 		niveau4.setVisible(true); // on affiche le niveau 4
-		Main.fenetreBasique.setVisible(false); //on cache l'accueil
+		MainProjet.fenetreBasique.setVisible(false); //on cache l'accueil
 	}
 
 }
