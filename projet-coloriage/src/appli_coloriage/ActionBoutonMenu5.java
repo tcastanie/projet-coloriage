@@ -13,7 +13,7 @@ public class ActionBoutonMenu5  extends AbstractAction{
 	public void actionPerformed(ActionEvent e) { 
 		System.out.println("Retour au menu");
 
-		Main.fenetreBasique.setVisible(true); //la page d'accueil est affichée
+		MainProjet.fenetreBasique.setVisible(true); //la page d'accueil est affichée
 		Action_bouton_5.niveau5.dispose(); //le niveau 5 est supprimé de la mémoire
 	}
 }
