@@ -2,7 +2,6 @@ package appli_coloriage;
 
 
 public class MainProjet {
-	
 
 	public static Fenetre fenetreBasique;
 
