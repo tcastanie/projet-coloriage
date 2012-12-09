@@ -1,6 +1,7 @@
 package appli_coloriage;
 
 import javax.swing.AbstractAction;
+
 import java.awt.event.ActionEvent;
 
 public class Action_bouton_4 extends AbstractAction {
@@ -9,8 +10,8 @@ public class Action_bouton_4 extends AbstractAction {
 
 	public static Niveau_4 niveau4;
 	
-	public Action_bouton_4(String texte){
-		super(texte);
+	public Action_bouton_4(){
+		super();
 	}
 	
 	public void actionPerformed(ActionEvent e) { 

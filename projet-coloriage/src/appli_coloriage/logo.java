@@ -13,10 +13,10 @@ public class logo extends JPanel {
 		g.setColor(new Color(229, 229, 229));
 		g.fillRect(0, 0, this.getWidth(), this.getHeight());
 		
-		ClassLoader myClassLoader = Thread.currentThread().getContextClassLoader();
-		Toolkit tk = Toolkit.getDefaultToolkit();
-		Image img = tk.getImage(myClassLoader.getResource("logo_accueil.jpg"));
+		ClassLoader myClassLoaderLOGO = Thread.currentThread().getContextClassLoader();
+		Toolkit tkLOGO = Toolkit.getDefaultToolkit();
+		Image img = tkLOGO.getImage(myClassLoaderLOGO.getResource("logo_accueil.jpg"));
 		
-		g.drawImage(img, 0, 0, this);     
+		g.drawImage(img, 0, 0, this);
 	}
 }

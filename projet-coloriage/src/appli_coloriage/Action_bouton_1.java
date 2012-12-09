@@ -1,7 +1,8 @@
 package appli_coloriage;
 
-import javax.swing.AbstractAction;
 import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
 
 public class Action_bouton_1 extends AbstractAction{
 	
@@ -9,16 +10,16 @@ public class Action_bouton_1 extends AbstractAction{
 	
 	public static Niveau_1 niveau1;
 	
-		public Action_bouton_1(String texte){
-			super(texte);
-		}
+	public Action_bouton_1(){
+		super();
+	}
 		
-		public void actionPerformed(ActionEvent e) { 
-			System.out.println("Clic niveau 1");
-
-			niveau1 = new Niveau_1();
-			niveau1.setVisible(true); // on affiche le niveau 1
-			MainProjet.fenetreBasique.setVisible(false); //on cache l'accueil
-		}
-
+	public void actionPerformed(ActionEvent e) { 
+		System.out.println("Clic niveau 1");
+		
+		niveau1 = new Niveau_1();
+		niveau1.setVisible(true); // on affiche le niveau 1
+		MainProjet.fenetreBasique.setVisible(false); //on cache l'accueil
+	}
+		
 }
