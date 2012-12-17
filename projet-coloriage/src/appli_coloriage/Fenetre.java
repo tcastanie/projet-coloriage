@@ -1,7 +1,10 @@
 package appli_coloriage;
 
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.Point;
 import java.awt.Toolkit;
 
 import javax.swing.JFrame;
@@ -18,6 +21,10 @@ public class Fenetre extends JFrame{
 	ClassLoader myClassLoader = Thread.currentThread().getContextClassLoader();
 	Toolkit tk = Toolkit.getDefaultToolkit();
 	
+	Image imgCurseur = tk.getImage(myClassLoader.getResource("curseur.png"));
+	
+	Cursor curseur = tk.createCustomCursor(imgCurseur, new Point( 1, 1 ), "Pointeur" );
+	
 	public Fenetre(){
 		super();
 		build();										//Initialisation de la fenêtre
@@ -31,6 +38,7 @@ public class Fenetre extends JFrame{
 		setResizable(false); 							//On refuse le redimensionnement
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //On dit à l'application de se fermer lors du clic sur la croix
 		setContentPane(buildContentPane());
+		setCursor(curseur);
 	}
 	
 	private JPanel buildContentPane(){
@@ -43,7 +51,7 @@ public class Fenetre extends JFrame{
 		bas.setBackground(new Color(229, 229, 229));
 		bas.setLayout(new GridLayout(1,2,20,1));
 		menu.setBackground(new Color(229, 229, 229));
-		menu.setLayout(new GridLayout(5,1,0,0));
+		menu.setLayout(new GridLayout(5,1,0,5));
 		
 		Bouton bouton1 = new Bouton(new Action_bouton_1(), "1", za);
 		//bouton1.setIcon(new ImageIcon(tk.getImage(myClassLoader.getResource("smiley-maison.gif"))));
